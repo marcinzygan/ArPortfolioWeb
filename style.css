@@ -224,7 +224,15 @@ header{
 
 
 /* FOOTER */
-
+/* ARROW ICON BACK TO TOP */
+.top-link {
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    animation: bounce 2s ease-in-out infinite;
+    visibility: hidden;
+    z-index: -100;
+  }
 /* MEDIA QUERIES */
 
 @media (min-width: 400px){
@@ -270,15 +278,7 @@ header{
     margin:0;
     height: auto;
 }
-/* ARROW ICON BACK TO TOP */
-.top-link {
-    position: fixed;
-    bottom: 1rem;
-    right: 2rem;
-    animation: bounce 2s ease-in-out infinite;
-    visibility: hidden;
-    z-index: -100;
-  }
+
 .show-link {
     visibility: visible;
     z-index: 100;
