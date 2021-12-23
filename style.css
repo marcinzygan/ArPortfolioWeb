@@ -176,9 +176,10 @@ section{
 }
 /* HERO SECTION */
 .hero{
-    min-height: calc(95vh - 5vh - 1em );
+    min-height: calc(95vh -  2em );
     display: flex;
     flex-direction: column;
+    margin-top:0;
      
 }
 .social__icons{
@@ -235,8 +236,8 @@ section{
     margin-right: 1em;
 }
 .hero__img{
-    height: 15rem;
-    flex: 2 1 0;
+    height: 25rem;
+    flex: 1 1 0;
     align-self: center;
     justify-self: center;
     margin: 1em 1em 0 1em;
