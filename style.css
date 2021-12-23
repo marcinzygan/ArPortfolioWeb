@@ -176,7 +176,7 @@ section{
 }
 /* HERO SECTION */
 .hero{
-    min-height: calc(95vh - 1em );
+    min-height: calc(95vh - 5vh - 1em );
     display: flex;
     flex-direction: column;
      
@@ -236,7 +236,7 @@ section{
 }
 .hero__img{
     height: 15rem;
-    flex: 1 1 0;
+    flex: 2 1 0;
     align-self: center;
     justify-self: center;
     margin: 1em 1em 0 1em;
