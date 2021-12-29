@@ -25,3 +25,8 @@ window.addEventListener("scroll", function(){
         topLink.classList.remove("show-link");
     }
 });
+
+// ********** set date ************
+// select span
+const date = document.getElementById("date");
+date.innerHTML = new Date().getFullYear();

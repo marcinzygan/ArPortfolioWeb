@@ -16,9 +16,8 @@
 --clr-primary: #FFFFFF ;
 --clr-accent: #3F3FFF;
 --clr-dark: #070707 ;
---fs-h1: 2rem ;
+--fs-h1: 1.8rem ;
 --fs-h2: 1.2rem;
---fs-headline:0.85rem;
 --fs-body: 0.8rem;
 --fs-nav: 1.2rem;
 --fs-nav-closed : 1rem
@@ -148,8 +147,8 @@ header{
 }/* END OF MEDIA FOR NAVIGATION*/
 /* GENERAL STYLES */
 section{
-    margin: 0 2em 0 2em;
-    margin-top: 2rem;
+    margin: 2rem;
+    
 }
 .section__h2{
     font-family: var(--ff-secondary);
@@ -168,19 +167,21 @@ section{
 }
 .section__p{
     font-family: var(--ff-primary);
-    font-size: var(--fs-headline);
-    font-weight: var(--fw-regular);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-light);
     letter-spacing: 1px;
     line-height: 1.3rem;
-    
+}
+a{
+    text-decoration: none;
+    color:var(--clr-primary);
 }
 /* HERO SECTION */
 .hero{
     min-height: calc(95vh -  2em );
     display: flex;
     flex-direction: column;
-    margin-top:0;
-     
+    margin-top:0;   
 }
 .social__icons{
     display: none;
@@ -194,7 +195,7 @@ section{
     flex: 1 1 0 ;
 }
 .hero__title {
-    margin:2em 1em 2em 1em;
+    margin:1em;
     font-family: var(--ff-secondary);
     font-size: var(--fs-h1);
     text-align: center;
@@ -229,18 +230,17 @@ section{
   transition: 0.5s ease-in;
 }
 .svg:hover{
-    /* fill:var(--clr-accent); */
     transform:  scale(1.2);
 }
 .svg__eye{
     margin-right: 1em;
 }
 .hero__img{
-    height: 15rem;
     flex: 1 1 0;
-    align-self: center;
-    justify-self: center;
-    margin: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 1em 1em 1em;
 }
 .hero__bg{
     height: 100%;
@@ -314,7 +314,6 @@ section{
 }
 .about__text{
     flex: 1 1 0 ;
-    /* margin-bottom: 2rem; */
 }
 .txt{
     font-family: var(--ff-primary);
@@ -327,34 +326,80 @@ section{
 }
 .about__img{
     width: 30rem;
-    
     object-fit: cover;
     flex: 1 1 0 ;
 }
+
+/* CONTACT */
+
+.form__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 6rem 0 6rem 0;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 30rem;
+}
+.form__label{
+    width: 100%;
+    text-align: left;
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-body);
+    letter-spacing: 1px;
+}
+.form__input{
+    width: 100%;
+    min-height: 30px;
+}
+.form__txt{
+    width: 100%;
+    text-align: left;
+    margin-top: 6rem;
+    letter-spacing: 1px;
+    font-weight: var(--fw-light);
+}
+
 /* FOOTER */
+
 /* ARROW ICON BACK TO TOP */
 .top-link {
     position: fixed;
     bottom: 1rem;
-    right: 2rem;
+    right: 1rem;
     animation: bounce 2s ease-in-out infinite;
     visibility: hidden;
     z-index: -100;
   }
+footer{
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgb(19, 19, 19);
+    color: var(--clr-primary);
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 400px){
     :root{
     --fs-h1: 2.25rem ;
     --fs-h2: 1.6rem;
-    --fs-headline: 1rem;
     --fs-body: 1rem;
-    /* --fs-nav: 0.8rem; */
 }}
 @media (min-width: 600px){
     :root{
     --fs-h1: 3rem ;
-    --fs-headline: 1.1rem;
 }
 .section__p{
     line-height:2rem ;
@@ -369,16 +414,13 @@ section{
 .nav-toggle{ display: none;
 }
 header{
-     margin: 1em 4em 0 4em; 
+     margin: 2em 4em 0 4em; 
 }
-/* .nav__item{
-    margin-left: 3em;
-} */
 .social__icons{
     display: flex;
 }
 section{
-    margin: 0 4em 0 4em;
+    margin: 4rem;
 }
 .hero{   
     display: flex;
@@ -410,15 +452,22 @@ section{
 .show-link {
     visibility: visible;
     z-index: 100;
-}    
 }
-
+.form__container{
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 2rem;
+      
+}
+.form__txt{
+    width: 50%;
+    margin-top: 0;   
+}
+}
 @media (min-width: 1000px){
     :root{
     --fs-h1: 4rem ;
-    /* --fs-h2: 2rem; */
-    /* --fs-headline: 1.2rem; */
-    /* --fs-body: 1.1rem; */
 }
 .section__p{
     letter-spacing: 2px;
@@ -433,8 +482,6 @@ section{
     :root{
     --fs-h1: 4.5rem ;
     --fs-h2: 2rem;
-    /* --fs-headline: 1.3rem;
-    --fs-body: 1.2rem; */
     --fs-nav-closed: 1.1rem;
 }
 .hero{
@@ -450,9 +497,7 @@ section{
 .about__img{
     max-width: 40rem;
 }
-/* .txt{
-    line-height: 30px;
-} */
+
 }
 
 @media (min-width: 1500px){
@@ -465,7 +510,6 @@ section{
     :root{
     
     --fs-h2: 2.5rem;
-    --fs-headline: 1.1rem;
     --fs-body: 1.1rem;
 }
 .svg{
@@ -477,10 +521,11 @@ section{
 .txt{
     line-height: 2.5rem;
 }
+
 }
 
 @media (min-width: 1800px){
-
+  
 }
 /* ANIMATIONS */
 @keyframes bounce {
