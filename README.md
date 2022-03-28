@@ -6,7 +6,7 @@
 - The website is build in HTML / CSS and JavaScript /
 
 
-- 📫 Find me on marcin-zygan.com
+- 📫 Find me on <a href="https://marcin-zygan.com">marcin-zygan.com</a>
 <p align= "center">
   <img src= "https://github.com/marcinzygan/marcinzygan/blob/main/monkey.png" >
 </p>
