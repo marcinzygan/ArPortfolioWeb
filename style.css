@@ -254,7 +254,7 @@ a {
 .portfolio__content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  max-width: 1680px;
+  /* max-width: 1680px; */
   margin: 0 auto;
   margin-top: 6rem;
   margin-bottom: 6rem;
@@ -490,7 +490,7 @@ footer {
   }
   .about__content {
     flex-direction: row;
-    /* align-items: flex-start; */
+    align-items: flex-start;
     margin-top: 8rem;
   }
   .show-link {
