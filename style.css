@@ -603,6 +603,9 @@ footer {
   .btn{
     margin-left: 3rem;
   }
+  .form__btn{
+    margin:0 auto;
+  }
   .about__text{
     padding: 0 8rem;
   }
